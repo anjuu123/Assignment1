@@ -12,4 +12,15 @@ def index(request):
     context={
     "mydetails": mydetails,
     }
+   
+    return HttpResponse(template.render(context,request))
+    
+
+def dept(request):
+    mydept= Department.objects.all().values()
+    template=loader.get_template("dept.html")
+    context={
+    "mydept": mydept,
+    }
+
     return HttpResponse(template.render(context,request))

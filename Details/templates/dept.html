@@ -1,0 +1,17 @@
+<h1>Department </h1>
+    <table border="2" style="height:20px; width: 100%;">
+        <tr>
+            <th>S.No</th>
+            <th>Dept Name</th>
+            <th>Num of Course</th>
+            <th>Num of Teacher</th>
+        </tr>
+        {% for x in mydept %}
+        <tr>
+            <td>{{ x.id }}</td>
+            <td>{{ x.deptname }}</td>
+            <td>{{ x.numofcourse }}</td>
+            <td>{{x.numofteacher}}</td>
+        </tr>
+        {% endfor %}
+        </table>
