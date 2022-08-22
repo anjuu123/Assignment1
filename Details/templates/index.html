@@ -1,0 +1,15 @@
+<h1>Student List</h1>
+    <table border="2" style="height:20px; width:50px">
+        {% for x in mydetails %}
+        <tr>
+            <td>{{ x.id }}</td>
+            <td>{{ x.firstname }}</td>
+            <td>{{ x.lastname }}</td>
+            <td>{{x.dateofbirth}}</td>
+            <td>{{x.rollno}}</td>
+            <td>{{x.deptname}}</td>
+            <td>{{x.coursename}}</td>
+            <td>{{x.semester}}</td>
+        </tr>
+        {% endfor %}
+        </table>
